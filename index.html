@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mightiest Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="src/functions.js"></script>
+</head>
+<body>
+    <div id = "tempiv" style = "display: none;"></div>
+    <div id = "operation" style = "display: none;"></div>
+    <div id = "header">
+        <h1>The Mightiest Calculator</h1>
+    </div>
+    <div id = "calculator">
+        <input id = "display" readonly>
+        <div>
+            <span><button class = "tecla" onclick = 'GH()'> GH </button></span>
+            <span><button class = "tecla" onclick = 'AC()'> AC </button></span>
+            <span><button class = "tecla" style = 'font-size: 25px' onclick = 'CL()'> ⌫ </button></span>
+            <span><button class = "tecla" onclick= "operate(event)"> / </button></span>
+        </div>
+        <div>
+            <span><button class = "innerTecla" onclick = 'computar(event)'> 7 </button></span>
+            <span><button class = "innerTecla" onclick = 'computar(event)'> 8 </button></span>
+            <span><button class = "innerTecla" onclick = 'computar(event)'> 9 </button></span>
+            <span><button class = "tecla" onclick="operate(event)"> X </button></span>
+        </div>
+            <span><button class = "innerTecla" onclick = 'computar(event)'> 4 </button></span>
+            <span><button class = "innerTecla" onclick = 'computar(event)'> 5 </button></span>
+            <span><button class = "innerTecla" onclick = 'computar(event)'> 6 </button></span>
+            <span><button class = "tecla" onclick="operate(event)"> - </button></span>
+        <div>
+            <span><button class = "innerTecla" onclick = 'computar(event)'> 1 </button></span>
+            <span><button class = "innerTecla" onclick = 'computar(event)'> 2 </button></span>
+            <span><button class = "innerTecla" onclick = 'computar(event)'> 3 </button></span>
+            <span><button class = "tecla" onclick="operate(event)"> + </button></span>
+        </div>
+        <div>
+            <span><button class = "innerTecla" onclick = "invert()"> +/- </button></span>
+            <span><button class = "innerTecla" onclick = 'computar(event)'> 0 </button></span>
+            <span><button class = "innerTecla" onclick = 'computar(event)'> . </button></span>
+            <span><button class = "innerTecla" onclick = 'result()' style = "background-color: lime;"> = </button></span>
+        </div>
+    </div>    
+    <div>
+</body>
+</html>
